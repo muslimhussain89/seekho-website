@@ -1,0 +1,2876 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body h2,h3,h4,h5,h6,p
+{
+  font-family: 'Roboto', sans-serif !important;
+}
+body
+{
+  background: #4E0CB9;
+
+}
+
+
+
+
+
+
+/*Reveal animation */
+.reveal
+{
+  position: relative;
+  transform: translateY(180px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active
+{
+  transform: translateY(0px);
+  opacity: 1;
+}
+/*Reveal animation End*/
+/*Animation for seekho logo in header*/
+@keyframes slideInLeft {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.image-2 {
+  animation: 2s ease-out 0s 1 slideInLeft;
+}
+/*Animation for seekho logo in header end*/
+
+body
+{
+  overflow-x: hidden;
+  text-align: -webkit-center;
+}
+.sheeko-body
+{
+  text-align: left;
+}
+/*padding top custom classes*/
+.pt_10
+{
+  padding-top: 10px;
+}
+.pt_15
+{
+  padding-top: 15px;
+}
+.pt_20
+{
+  padding-top: 20px;
+}
+.pt_25
+{
+  padding-top: 25px;
+}
+.pt_30
+{
+  padding-top: 30px;
+}
+.pt_35
+{
+  padding-top: 35px;
+}
+.pt_40
+{
+  padding-top: 40px;
+}
+/*padding bottom custom classes*/
+.pb_10
+{
+  padding-bottom: 10px;
+}
+.pb_15
+{
+  padding-bottom: 15px;
+}
+.pb_20
+{
+  padding-bottom: 20px;
+}
+.pb_25
+{
+  padding-bottom: 25px;
+}
+.pb_30
+{
+  padding-bottom: 30px;
+}
+.pb_35
+{
+  padding-bottom: 35px;
+}
+.pb_40
+{
+  padding-bottom: 40px;
+}
+.pb_45
+{
+  padding-bottom: 45px;
+}
+
+
+
+/*Menu button*/
+.hamburger-menu h2
+{
+  font-size: 55px;
+  font-weight: 100;
+}
+.hamburger-menu h2 span
+{
+  font-weight:900;
+}
+.hamburger-menu h2:hover
+{
+  color: #FF2994;
+}
+.button_container {
+    padding: 50px 22px;
+    background-color: #52367C;
+    border-radius: 9px;
+    right: 2%;
+    bottom: -8px;
+    position: absolute;
+    /* height: 53px; */
+    width: 0%;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity .25s ease;
+}
+.button_container.active
+{
+  right: 1%;
+  top: -47px !important;
+  bottom: auto !important;
+  margin-right: 22px !important;
+  padding: 50px 22px;
+}
+.button_container.active span
+{
+  height: 3px !important;
+  border-radius: 25px;
+  top: 60px;
+  width: 62%;
+  right: 18%;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active
+{
+  position: fixed !important;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: white;
+    border: none;
+    height: 3px;
+    width: 48%;
+    position: absolute;
+    top: 62px;
+    right: 25%;
+    transition: all .35s ease;
+    cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 72px;
+  height: 3.2px;
+}
+.button_container span:nth-of-type(3) {
+  top: 82px;
+}
+
+.menu_overlay {
+  position: fixed;
+  background: #4E0CB9;
+  top: 0;
+  right: 0;
+  width: 0%;
+  opacity: 0;
+  visibility: visible;
+  transition: opacity .55s, visibility .55s, width .85s;
+  overflow-y: auto;
+  z-index: -1;
+  height: 100%;
+}
+.menu_overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100vh;
+  width: 100%;
+  z-index: 5;
+}
+.menu_overlay.open body
+{
+  position: fixed;
+}
+.menu_overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.menu_overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.menu_overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+  
+}
+.menu_overlay .upper-menu-row ul li:nth-child(3)
+{
+  display: none;
+}
+.menu_overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.menu_overlay nav {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+.menu_overlay ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 0px !important;
+}
+.menu_overlay .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.about-us .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.careers .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.downloads .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.student-voice  .lower-menu-row ul li:nth-child(5)
+ {
+  display: none;
+}
+.press  .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.contact-us   .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.driver-education .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.theoretical-lessons .lower-menu-row ul li:nth-child(5)
+ {
+  display: none;
+}
+.sheekho-traffic .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.faqs .lower-menu-row ul li:nth-child(5),.our-partner .lower-menu-row ul li:nth-child(5)
+{
+  display: none;
+}
+.our-partner .driver-education-content img
+{
+  width: 100%;
+  margin-top: 10px;
+}
+.menu_overlay .upper-menu li button
+{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 0px;
+}
+
+
+.upper-menu-row
+{
+  margin: 18px 0px 40px 0px ;
+}
+.upper-menu-col
+{
+  position: relative;
+}
+.upper-menu-col img
+{
+  width: 7%;
+    position: absolute;
+    right: -128px;
+    top: 50px;
+}
+.upper-menu-row ul li
+{
+  margin: 15px 0px;
+}
+.top-header .mob-img {
+  display: none;
+}
+
+
+/*header car animation*/
+#trainMotion {
+  margin-top: -135px;
+}
+
+#trainMotion img {
+  transform: translate(-12%, 0%);
+  transition: all 2s ease-out;
+}
+
+#trainMotion.choochoo img {
+  transform: translate(43%, 0%);
+}
+
+
+.top-header .lower-menu-row
+{
+  border-top: 1px solid #c1c1c1;
+    padding: 24px 0px;
+    width: 100%;
+    margin-left: 0px;
+}
+.lower-menu
+{
+  text-align: left;
+}
+.menu_overlay .lower-menu li
+{
+  display: inline-block;
+  margin: 10px 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.menu_overlay .lower-menu li button 
+{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  }
+/* .menu_overlay ul li a:hover:after, .menu_overlay ul li a:focus:after, .menu_overlay ul li a:active:after {
+  width: 100%;
+} */
+.menu_overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+.seekho-vertical-text
+{
+  width: 45px !important;
+}
+.menu-section  .seekho-vertical-text
+{
+  writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    color: white;
+    border-left: 1px solid #C1C1C1;
+    height: 100%;
+    text-align: center;
+}
+.menu-section  .seekho-vertical-text p
+{
+  padding: 29px !important;
+  margin: 0px !important;
+}
+.menu-section .vertical-img
+{
+  writing-mode: vertical-lr;
+}
+.menu-section .footer-img,.about-us .footer-img,.careers .footer-img,.faqs .footer-img,.contact-us .footer-img,.student-voice .footer-img,
+.press .footer-img,.driver-education .footer-img,.sheekho-traffic .footer-img,.theoretical-lessons .footer-img,.downloads .footer-img,
+.our-partner .footer-img
+{
+  display: none;
+  transform: none;
+  width: 28%;
+  margin-left: 10px;
+}
+.menu-section-right
+{
+  position: relative;
+}
+
+/****************header driver education section********************/
+
+.about-us .lower-menu-row,.driver-education .lower-menu-row,.student-voice .lower-menu-row,.faqs .lower-menu-row,.about-us-footer .lower-menu-row,
+.our-partner .lower-menu-row
+{
+  border-top: 1px solid #c1c1c1;
+  padding: 18px 0px;
+  width: 100%;
+}
+.driver-education,.theoretical-lessons,.about-us,.sheekho-traffic,.press,.contact-us,
+.student-voice,.faqs,.careers,.about-us-footer,.downloads,.our-partner
+{
+  display: none;
+  text-align: left;
+}
+.driver-education h2,.theoretical-lessons h2,.about-us h2,.careers h2,.sheekho-traffic  h2,.press h2,.contact-us h2,.student-voice h2,.downloads h2
+{
+  font-size: 50px !important;
+}
+.driver-education,.theoretical-lessons,.student-voice,.sheekho-traffic,.about-us-footer
+{
+  background-color: #4B4B4B;
+  color: white;
+  height: 100vh;
+}
+
+.contact-us .driver-education-content h2
+{
+  margin-top: 60px;
+}
+ .contact-us .contact-details
+{
+  width: 37%;
+  float: left;
+  padding-top:60px ;
+}
+/*
+.contact-us .contact-details::-webkit-scrollbar
+{
+  width: 10px;
+}
+.contact-us .contact-details::-webkit-scrollbar-track 
+{
+  background: #f1f1f1;
+}
+.contact-us .contact-details::-webkit-scrollbar-thumb 
+{
+  background: #888;
+}
+.contact-us .contact-details::-webkit-scrollbar-thumb:hover 
+{
+  background: #555;
+} */
+.contact-us .seekho-map
+{
+    height: 100%;
+    float: left;
+    width: 60%;
+    position: top;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.contact-us .hide-btn
+{
+  z-index: 99;
+  position: absolute;
+    right: 30px;
+    top: -33px;
+    background-color: #52367C;
+    border-radius: 12px;
+    padding: 6px 10px;
+}
+.contact-us .driver-education-content
+{
+  padding: 0px !important;
+}
+.contact-us .text-right
+{
+  z-index: 99;
+  color: black;
+}
+.contact-us .social-icon a
+{
+  text-decoration: none;
+  color: white;
+}
+.contact-us .social-icon i
+{
+  padding: 8px;
+}
+.contact-us .social-icon i:nth-child(1)
+{
+  padding-left: 0px !important;
+}
+.contact-us .email-address
+{
+  display: flex;
+  margin-top: 20px;
+}
+.contact-us .email-address i
+{
+  margin-right: 15px;
+  margin-top: 5px;
+}
+.student-voice .div-scroll,.faqs .div-scroll
+{
+  height: 55vh;
+  overflow-y: scroll;
+}
+.faqs .div-scroll p::before
+{
+  content: url(../images/our-fleet/Icon\ open-arrow-circle-right.png);
+  position: absolute;
+  left: -10px;
+}
+.faqs .div-scroll p span
+{
+  color: #FFE51F;
+}
+.student-voice .div-scroll::-webkit-scrollbar,.faqs .div-scroll::-webkit-scrollbar,.media-image-gallery::-webkit-scrollbar
+{
+  width: 10px;
+}
+.student-voice .div-scroll::-webkit-scrollbar-track, .faqs .div-scroll::-webkit-scrollbar-track,.media-image-gallery::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+.student-voice .div-scroll::-webkit-scrollbar-thumb, .faqs .div-scroll::-webkit-scrollbar-thumb,.media-image-gallery::-webkit-scrollbar-thumb
+{
+  background: #888;
+}
+.student-voice .div-scroll::-webkit-scrollbar-thumb:hover, .faqs .div-scroll::-webkit-scrollbar-thumb:hover,.media-image-gallery::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+}
+.student-voice .user-name
+{
+  color: #06DE51;
+}
+.careers,.downloads
+{
+  background-color:#198D49;
+  color: white;
+  display: none;
+  height: 100vh;
+}
+
+.careers h3
+{
+  font-size: 48px !important;
+}
+.download-scroll-div::-webkit-scrollbar
+{
+  width: 10px;
+}
+.download-scroll-div::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+.download-scroll-div::-webkit-scrollbar-thumb
+{
+  background: #888;
+}
+.download-scroll-div::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+}
+/* .downloads .download-scroll-div
+{
+  
+} */
+.visible-download
+{
+  visibility: hidden;
+}
+.downloads h3
+{
+  font-size: 16px;
+  margin: 14px 0px !important;
+}
+.downloads a
+{
+  text-decoration: none;
+  color: white !important;
+  font-weight: bold;
+}
+.downloads a:hover
+{
+  text-decoration: none !important;
+  color: #7CFFB2 !important;
+}
+.careers h3:hover,.downloads h3:hover
+{
+  color: #7CFFB2;
+}
+.careers p,.downloads p
+{
+  margin: 24px 0px;
+}
+.careers p a
+{
+  background-color: yellow;
+  padding: 2px 15px;
+}
+.press .press-img1,.press .press-img2,.press .press-img3,.press .press-img4,.press .press-img5,.press .press-img6,.press .press-img7,
+.press .press-img8,.press .press-img9
+{
+  width: 100%;
+}
+.press .press-img7,
+.press .press-img8,.press .press-img9
+{
+}
+
+.about-us,.press,.contact-us,.faqs
+{
+  background-color:#4E0CB9;
+  color: white;
+  height: 100vh;
+}
+.our-partner
+{
+  background-color:#4E0CB9;
+  color: white;
+}
+.driver-education .driver-education-content,.about-us .driver-education-content,.careers .driver-education-content,
+.sheekho-traffic .driver-education-content,.student-voice .driver-education-content ,.faqs .driver-education-content,
+.downloads .driver-education-content,.our-partner .driver-education-content
+{
+  padding: 30px 0px;
+}
+.press .driver-education-content
+{
+  padding: 30px 0px;
+}
+/* .press .driver-education-content
+{
+  height: 475px;
+  overflow-y: scroll;
+}
+.press .driver-education-content::-webkit-scrollbar
+{
+  width: 10px;
+}
+.press .driver-education-content::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+.press .driver-education-content::-webkit-scrollbar-thumb
+{
+  background: #888;
+}
+.press .driver-education-content::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+} */
+.driver-education .seekho-vertical-text,.theoretical-lessons .seekho-vertical-text,.about-us .seekho-vertical-text,
+.careers .seekho-vertical-text,.theoretical-lessons .seekho-vertical-text,.sheekho-traffic .seekho-vertical-text,
+.press .seekho-vertical-text,.contact-us .seekho-vertical-text,.student-voice .seekho-vertical-text,
+.faqs .seekho-vertical-text,.downloads .seekho-vertical-text,.our-partner .seekho-vertical-text
+{
+  writing-mode: vertical-lr;
+  color: white;
+  border-right: 1px solid #C1C1C1;
+  height: 85%;
+  text-align: center;
+  padding-left: 10px;
+}
+.driver-education .seekho-vertical-text p,.theoretical-lessons .seekho-vertical-text p,.about-us .seekho-vertical-text p,.careers .seekho-vertical-text p,
+.sheekho-traffic .seekho-vertical-text p,.press .seekho-vertical-text p,.contact-us .seekho-vertical-text p,.student-voice .seekho-vertical-text p,
+.faqs .seekho-vertical-text p,.downloads .seekho-vertical-text p,.our-partner .seekho-vertical-text p
+{
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.driver-education button,.theoretical-lessons button,.about-us button,.careers button,.press button,.contact-us button,.student-voice button,
+.faqs button,.downloads button,.our-partner button
+{
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.driver-education .hide-btn,.theoretical-lessons .hide-btn,.about-us .hide-btn,.careers .hide-btn,
+.sheekho-traffic .hide-btn,.press .hide-btn,.contact-us .hide-btn,.student-voice .hide-btn,
+.faqs .hide-btn,.downloads .hide-btn,.our-partner .hide-btn
+{
+  border: none;
+    background: transparent;
+    font-size: 47px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    top: -50px;
+    background-color: #52367C;
+    border-radius: 12px;
+    padding: 10px 6px 0px 6px;
+    font-weight: 500;
+}
+
+.theoretical-lessons .lower-menu-row,.sheekho-traffic .lower-menu-row
+{
+  border-top: 1px solid #c1c1c1;
+  padding: 18px 0px;
+}
+.contact-us .lower-menu-row
+{
+  border-top: 1px solid #c1c1c1;
+  padding: 18px 0px;
+}
+.careers .lower-menu-row,.press .lower-menu-row,.downloads .lower-menu-row
+{
+  border-top: 1px solid #C1C1C1;
+  padding: 18px 0px;
+  width: 100%;
+}
+
+.driver-education .lower-menu-row ul li,.theoretical-lessons .lower-menu-row ul li,.about-us .lower-menu-row ul li,.careers .lower-menu-row ul li,
+.sheekho-traffic .lower-menu-row ul li,.press .lower-menu-row ul li,.contact-us .lower-menu-row ul li,.student-voice .lower-menu-row ul li,
+.faqs .lower-menu-row ul li,.downloads .lower-menu-row ul li,.our-partner .lower-menu-row ul li
+{
+  display: inline-block;
+    margin: 10px 10px;
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+.driver-education-content .traffic-class
+{
+  margin-left: -15px !important;
+  width: 78%;
+}
+.sheekho-traffic .file-download {
+  margin: 18px 0px;
+}
+.sheekho-traffic .driver-education-content {
+  padding: 28px 0px;
+}
+.driver-education .lower-menu-row ul li a,.theoretical-lessons .lower-menu-row ul li a,.about-us .lower-menu-row ul li a,.careers .lower-menu-row ul li a,
+.sheekho-traffic .lower-menu-row .lower-menu-row ul li a,.press .lower-menu-row ul li a,.student-voice .lower-menu-row ul li a,
+.faqs .lower-menu-row ul li a,.downloads .lower-menu-row ul li a ,.our-partner .lower-menu-row ul li a
+{
+  text-decoration: none;
+    color: white;
+}
+.theoretical-lessons .driver-education-content
+{
+  padding-top: 55px;
+}
+.theoretical-lessons .image2
+{
+  width: 85%;
+  margin-top: 22px;
+}
+/* .theoretical-lesseon-details
+{
+  height: 415px;
+  overflow-y: scroll;
+}
+.theoretical-lesseon-details::-webkit-scrollbar
+{
+  width: 10px;
+}
+.theoretical-lesseon-details::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+.theoretical-lesseon-details::-webkit-scrollbar-thumb
+{
+  background: #888;
+}
+.theoretical-lesseon-details::-webkit-scrollbar-thumb:hover
+{
+  background: #555;
+} */
+.about-us .driver-education-content p span
+{
+  font-weight: 900;
+}
+.about-us .driver-education-content p span,.sheekho-traffic .driver-education-content p span
+{
+  color: #FFE51F;
+}
+.about-ceo-name
+{
+  margin-bottom: 0px !important;
+  font-weight: 600;
+  padding: 8px 200px 0px 70px;
+}
+.about-ceo-desig
+{
+  font-size: 0.8rem;
+  padding: 0px 200px 10px 70px;
+}
+.driver-education-content .about-ceo-name
+{
+  padding: 55px 200px 0px 0px;
+}
+.driver-education-content .about-ceo-desig
+{
+  padding: 8px 200px 0px 0px;
+}
+.driver-education-content .we-believe
+{
+  color: #FFE51F;
+}
+.about-us .lower-menu li button ,.careers .lower-menu li button,.sheekho-traffic .lower-menu li button,.student-voice .lower-menu li button,
+.faqs .lower-menu li button,.downloads .lower-menu li button,.our-partner .lower-menu li button
+{
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  }
+
+  /******Press images gallery******
+  *********************************/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #4E0CB9;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: unset;
+    background-color: transparent;
+    margin: auto;
+    padding: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  .mySlides
+  {
+    width: 38%;
+  }
+  .mySlidess
+  {
+    width: 32%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev
+  {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    width: 4%;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    color:white !important;
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: 4%;
+    right: 20%;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    color: black !important;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    border-radius: 3px 0 0 3px;
+    color: white !important;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white !important;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .modal img {
+    width: 100%;
+  }
+  /* .press .modal img {
+    width: auto;
+  } */
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  .media-image-gallery
+  {
+    height: 52vh;
+    overflow-y: scroll;
+  }
+  .media-image-gallery img
+  {
+    margin-top: 10px;
+  }
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  .modal img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /******Press images gallery end******
+  *********************************/
+
+
+/****************header driver education section end********************/
+.top-header
+{
+    background-image: url(../images/header-images/alexey-demidov-K6nm7W3So_g-unsplash.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 100% auto;
+    height: 88vh;
+    position: relative;
+}
+.header-inner-row
+{
+  padding-top: 30px !important;
+  padding-right: 15px !important;
+}
+.top-header .image-2
+{
+    width: 75%;
+    margin-top: 185px;
+    margin-right: 140px;
+}
+.top-header .image-3
+{
+    width: 55%;
+}
+.top-header .overlay-menu  .seekho-vertical-text
+{
+  height: 85%;
+  border-right: 1px solid #707070;
+}
+.top-header  .seekho-vertical-text
+{
+  height: 100%;
+  border-right: 1px solid #707070;
+}
+.top-header .seekho-vertical-text p
+{
+  height: 100%;
+  writing-mode: vertical-lr;
+  float: left;
+  padding: 0px 10px 150px 10px;
+  margin: 0px !important;
+  color: white;
+}
+nav {
+    width: 100%;
+    background-color:transparent;
+  }
+  .single-page-navigation
+  {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 2;
+    opacity: 85%;
+    background-color: black;
+	border-top: 1px solid #707070;
+}
+/* .single-page-navigation .seekho-nav-logo .active {
+  background-image: url(../images/header-images/link.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-position-y: center;
+} */
+/* .single-page-navigation .active
+{
+  font-size: 18px;
+  padding: 12px;
+  font-weight: bold;
+} */
+  .single-page-navigation ul
+  {
+    
+    padding: 20px 0px 15px 24px !important;
+    margin-left: 44px;
+	  margin-bottom: 0px;
+  }
+  .single-page-navigation li:nth-child(11)
+  {
+    display: none;
+  }
+  .single-page-navigation ul li {
+    list-style: none;
+    margin: 15px 0px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .single-page-navigation ul li a:hover {
+    color: #fc0;
+  }
+  .single-page-navigation ul li a {
+    margin: 0px;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+  .single-page-navigation p{
+  margin-bottom: 16px;
+  color: #fc0;
+  font-weight: 700;
+  font-size: 20px;
+  }
+  .single-page-navigation  button
+  {
+    margin: 0px;
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+  }
+  .item {
+    width: 100%;
+    background-color: #ecf0f1;
+    border-bottom: 1px solid #ccc;
+    
+  }
+  
+  .sheeko .seekho-vertical-text p 
+  {
+    writing-mode: vertical-lr; 
+    float: left;
+    padding: 110px 10px 10px 15px;
+    margin: 0px !important; 
+  }
+  .sheeko .seekho-vertical-text
+  {
+    height: 100%;
+    border-right: 1px solid #707070;
+    margin-right: 56px;
+  }
+  .seekho-content img
+  {
+    width: 100%;
+  }
+  .seekho-content
+  {
+    margin: 50px 0px;
+  }
+  .seekho-content p:nth-child(1)
+  {
+    padding: 0px 160px 10px 70px;
+    border-bottom: 1px solid #c1c1c1;
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .seekho-content p:nth-child(2)
+  {
+    padding: 0px 160px 0px 70px;
+    font-size: 18px;
+	
+  }
+  .seekho-content p:nth-child(3)
+  {
+    padding: 8px 200px 0px 70px;
+    font-size: 18px;
+  }
+  .sheeko .sheeko-read-more
+  {
+    border: none !important;
+    padding-left: 70px;
+    margin-bottom:25px;
+  }
+  
+  .itemss {
+    margin: 0px auto;
+}
+
+/* .slick-track
+{
+  height: 650px !important;
+} */
+
+.slick-slide 
+{
+    padding-top:45px !important;
+    height: 520px !important;
+    padding: 20px 45px !important;
+    border-right: 1px solid #707070 !important;
+    /* width: 310px !important; */
+}
+.itemss .svg-img
+{
+  width: 84px;
+  height: 128px;
+}
+.itemss .svg-img svg
+{
+  width: 100%;
+  height: 100%;
+}
+.itemss .slick-slide p
+{
+  margin-top: 35px;
+  color: #727272;
+}
+.my-slider .slick-slide:hover
+{
+  background-color: #504F52;
+  color: white !important;
+}
+.slick-slide:hover #slider-svg
+{
+  fill: white;
+}
+.itemss .slick-slide:hover p
+{
+  color: white !important;
+}
+
+.slick-slide h3
+{
+  margin-top: 35px !important;
+  font-weight: 600 !important;
+  margin-bottom: 0px !important; 
+}
+
+
+.slick-slide img {
+    width: 112px;
+    height: 76px;
+    border: 0px solid #fff
+}
+.slick-prev {
+  left: -5% !important;
+  top: 35% !important;
+  z-index: 1;
+  margin-top: 28px !important;
+}
+.slick-next {
+  right: -5% !important;
+  top: 35% !important;
+  margin-top: 28px !important;
+}
+.slick-next:before
+{
+  font-family: "Font Awesome 5 Free" !important ;
+  content: "\f0da" !important;
+  font-weight: 900;
+  font-size: 56px !important;
+
+}
+.slick-prev:before
+{
+  font-family: "Font Awesome 5 Free" !important ;
+  content: "\f0d9" !important;
+  font-weight: 900;
+  font-size: 56px !important;
+  
+}
+
+.slick-next:before, .slick-prev:before
+{
+  font-size: 56px !important;
+  color: black !important;
+    border-radius: 25px;
+    color: #DEDEDE !important;
+}
+
+.slick-next:hover
+{
+  color: #52367C !important;
+}
+/* .my-slider button
+{
+  display: none !important;
+} */
+.my-slider .item
+{
+  background-color: white !important;
+}
+.my-slider .item .seekho-vertical-text p
+{
+  writing-mode: vertical-lr;
+    padding: 150px 10px 10px 15px;
+  margin: 0px;
+}
+.my-slider .item .seekho-vertical-text
+{
+  height: 100%;
+    border-right: 1px solid #707070;
+    margin-right: 71px;
+}
+
+/*Our Fleet Section*/
+
+.our-fleet .top-section
+{
+  background-image: url(../images/our-fleet/Saigon-Walls-Black-and-white-graffiti.png);
+  background-color: #000000;
+  background-size: 100% auto;
+}
+.our-fleet .item{
+  background-color: transparent;
+}
+.our-fleet .item .seekho-vertical-text p
+{
+  writing-mode: vertical-lr; 
+    float: left;
+    padding: 38px 10px 10px 15px;
+    margin: 0px !important;
+    color: white;
+}
+.our-fleet .seekho-vertical-text 
+{
+  height: 100%;
+  border-right: 1px solid #707070;
+  margin-right: 71px;
+}
+.our-fleet .content
+{
+  margin-top: 18px;
+}
+.our-fleet h2
+{
+  color: white;
+  margin-top: 38px;
+}
+.our-fleet ul li
+{
+  color: white;
+  line-height: 30px !important;
+  font-size: 18px;
+  background-image: url(../images/our-fleet/Icon\ open-arrow-circle-right.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+}
+.our-fleet ul li:before
+{
+  width: 10px;
+}
+.our-fleet ul
+{
+  /* list-style-image: url(../images/our-fleet/Icon\ open-arrow-circle-right.png); */
+  list-style-type: none;
+}
+.our-fleet-img
+{
+  background-image: url(../images/our-fleet/harrison-fitts-O4cLzhhvITE-unsplash-copy.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: 100% 100%;
+}
+.our-fleet-img img
+{
+  margin-top: 50px;
+  margin-left: 69px;
+  margin-bottom: 22px;
+  width: 70%;
+}
+.our-fleet-img-text
+{
+  position: relative;
+}
+.our-fleet-img-text p
+{
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 25px;
+    left: 80px;
+}
+
+
+/*Get started Section*/
+
+.get-started .item .seekho-vertical-text p
+{
+  writing-mode: vertical-lr; 
+    float: left;
+    padding: 150px 10px 10px 15px;
+    margin: 0px !important;
+    color: #434343;
+}
+.get-started .item .seekho-vertical-text
+{
+  height: 100%;
+  border-right: 1px solid #707070;
+  margin-right: 71px;
+}
+.get-started .columns:nth-child(1)
+{
+  padding-left: 0px;
+  margin-left: -70px;
+}
+.get-started .columns
+{
+  padding: 70px 50px;
+  text-align: center;
+  color: #707070;
+  border-right: 1px solid #707070;
+  height: 450px;
+}
+.columns:hover .car-icon,.columns:hover .fa-phone,.columns:hover .fa-dollar-sign,.columns:hover  p
+{
+  transform: scale(1.3);
+}
+.car-icon,.fa-phone,.fa-dollar-sign,.columns p
+{
+  transition: transform .5s;
+}
+.get-started .columns .car-icon
+{
+  font-size: 60px;
+}
+.get-started .columns i
+{
+  font-size: 56px;
+}
+.get-started .columns p
+{
+  font-size: 20px !important;
+}
+.column-detail
+{
+  border-top: 1px solid #707070;
+  margin-left: -82px;
+}
+.column-detail ul
+{
+  padding: 30px 0px 30px 85px !important;
+}
+
+
+.packages
+{
+  background-image: url(../images/packages/Rectangle-11.png);
+  background-size: 100% 100%;
+  color: white;
+}
+.package-parg-borrom
+{
+  font-size: 15px;
+  
+}
+.packages .package-text
+{
+  font-size: 20px !important;
+}
+.packages .item
+{
+  background-color: transparent;
+  color: white;
+}
+.packages .item .seekho-vertical-text p
+{
+  writing-mode: vertical-lr; 
+    float: left;
+    padding: 150px 10px 10px 15px;
+    margin: 0px !important;
+    color: white;
+}
+.packages .item .seekho-vertical-text
+{
+  height: 100%;
+  border-right: 1px solid #707070;
+  margin-right: 71px;
+}
+table
+{
+  color: white;
+}
+#London table tr:nth-child(1)
+{
+  background-color: #dc3545;
+}
+#London table tr:nth-child(2)
+{
+  background-color: #198D49;
+}
+#London table tr:nth-child(3)
+{
+  background-color: #2983EF;
+}
+#London table tr:nth-child(4)
+{
+  background-color: #E89707;
+}
+#London table tr:nth-child(5)
+{
+  background-color: #EC5580;
+}
+
+#Paris table tr:nth-child(1)
+{
+  background-color: #E89707;
+}
+#Paris table tr:nth-child(2)
+{
+  background-color: #EC5580;
+}
+#Paris table tr:nth-child(3)
+{
+  background-color: #2983EF;
+}
+#Paris table tr:nth-child(4)
+{
+  background-color: #dc3545;
+}
+#Paris table tr:nth-child(5)
+{
+  background-color: #198D49;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table tr,table tr th,table tr td
+{
+  padding: 30px;
+}
+.flip-td
+{
+  padding: 0px;
+  width: 80%;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+.packages .tab
+{
+  text-align: end;
+}
+.packages .tab  button
+{
+  padding: 2px 25px;
+  border:1px solid #707070;
+  background-color: black;
+  color: white;
+}
+.packages .tab  button:nth-child(1)
+{
+  margin-right: -5px;
+}
+.packages .active
+{
+  background-color: #2983EF !important;
+}
+.packages .tab  button:hover
+{
+  background-color: black;
+  color: white;
+}
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 120px;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  padding: 8px 18px 0px 18px;
+}
+
+ .flip-box-front {
+  color: white;
+  
+}
+.flip-box-front p, .flip-box-back p
+{
+  margin-top: 28px;
+}
+
+.flip-box-back {
+  color: white;
+  transform: rotateX(180deg);
+  
+}
+#London table tr:nth-child(2) .flip-box-front
+{
+  background-color: #198D49;
+}
+#London table tr:nth-child(2) .flip-box-back
+{
+  background-color: #24b861;
+}
+#London table tr:nth-child(3) .flip-box-front
+{
+  background-color: #2983EF;
+}
+#London table tr:nth-child(3) .flip-box-back
+{
+  background-color: #74abee;
+}
+#London table tr:nth-child(4) .flip-box-front
+{
+  background-color: #E89707;
+}
+#London table tr:nth-child(4) .flip-box-back
+{
+  background-color: #f9ba4b;
+}
+#London table tr:nth-child(5) .flip-box-front
+{
+  background-color: #EC5580;
+}
+#London table tr:nth-child(5) .flip-box-back
+{
+  background-color: #e891aa;
+}
+/*OUR Team*/
+.our-team  .item .seekho-vertical-text p
+{
+  writing-mode: vertical-lr; 
+    float: left;
+    padding: 180px 10px 10px 15px;
+    margin: 0px !important;
+    color: black;
+}
+.our-team  .item .seekho-vertical-text
+{
+  height: 100%;
+  border-right: 1px solid #707070;
+  margin-right: 71px;
+}
+.our-team-content
+{
+  background-color: blue;
+  margin-left: -86px;
+  padding:50px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.our-team-text
+{
+  color: white;
+  padding: 50px;
+}
+.our-team-content img
+{
+  height: 100%;
+  width: 100%;
+}
+
+.our-team-content .slick-slide
+{
+  height: auto !important;
+  border-right: none !important;
+  padding: 50px 6px 0px !important;
+}
+/* .our-team-content button
+{
+  display: none !important;
+} */
+.our-team-content .slick-slide p
+{
+  
+  margin-top: 10px;
+  transition: 0.8s;
+  color: transparent;
+}
+.our-team-content .slick-slide:hover p 
+{
+  display: block !important;
+  color: #343a40 !important;
+  transform: translateY(-35px);
+  padding-left: 10px;
+  background-color: #ecf0f1;
+  font-size: 12px;
+}
+
+
+/*our-partner*/
+.our-partner .seekho-vertical-text
+{
+  height: 100%;
+}
+
+
+
+/* Footer */
+.footer
+{
+  background-color: #707070;
+  padding-top:0px;
+  padding-bottom: 20px;
+  color: white;
+}
+.footer .third-footer,.footer .footer-social
+{
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.footer .third-footer img
+{
+  width: 25%;
+}
+.footer i
+{
+  padding: 0px 10px;
+  font-size: 25px;
+}
+.footer .copyright
+{
+  font-size: 12px;
+  padding: 0px 2px;
+}
+.footer a
+{
+	text-decoration: none;
+	color: white;
+}
+.footer a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+
+.footer .footer-social
+{
+  background-color: #393939;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer p
+{
+  margin-bottom: 0px !important;
+}
+.footer p:nth-child(4)
+{
+  margin-top: 25px !important;
+}
+.second-footer
+{
+  background: #404040;
+  border-bottom: 1px solid black;
+  padding: 15px 0px;
+}
+.second-footer .lower-menu-row {
+  /*border-top: 1px solid #c1c1c1;*/
+  /*width: 100%;*/
+  /*margin-left: 0px;*/
+}
+
+.second-footer ul {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 0px !important;
+  padding-left: 14px;
+}
+
+.second-footer .lower-menu li {
+  display: inline-block;
+  margin: 10px 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.second-footer .lower-menu li button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.second-footer .lower-menu li button:hover 
+{
+  font-weight: bold;
+}
+.second-footer ul li:nth-child(5)
+{
+  display: none !important;
+}
+
+
+/*******************************************************
+************MEDIA QUERIES 1024px************************
+********************************************************/
+@media screen and (max-width: 1024px) 
+{
+  .top-header
+  {
+    /*height: auto;*/
+  }
+  .top-header .overlay-menu .seekho-vertical-text
+  {
+    display: none;
+  }
+  .top-header .seekho-vertical-text p
+  {
+     height: auto;
+     padding: 166px 10px 150px 10px;
+  }
+  .top-header .image-2 
+  {
+    margin-top: 236px;
+  }
+  #trainMotion 
+  {
+    margin-top: -86px;
+ }
+  .seekho-content p:nth-child(1) 
+  {
+    padding: 0 40px 10px 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .seekho-content p:nth-child(2),.seekho-content p:nth-child(3)
+  {
+    padding: 0 40px 0 40px;
+    font-size: 16px;
+  }
+  .sheeko-read-more
+  {
+      margin-bottom:15px;
+  }
+  .sheeko .sheeko-read-more button 
+  {
+    padding-left: 40px;
+  }
+  
+  .upper-menu-row {
+    margin: 18px 0px 0px 0px;
+    }
+    .top-header .lower-menu-row
+    {
+        position: fixed;
+        bottom: 0;
+    }
+    .hamburger-menu h2 
+    {
+    font-size: 45px;
+    }
+    .upper-menu-col img 
+    {
+    right: -70px !important;
+    top: 75px;
+    }
+    .careers,.downloads
+  {
+    height: auto;
+  }
+  .theoretical-lessons .seekho-vertical-text,.sheekho-traffic .seekho-vertical-text,.contact-us .seekho-vertical-text,.about-us .seekho-vertical-text, .careers .seekho-vertical-text,.downloads .seekho-vertical-text {
+    height: 100%;
+  }
+  .theoretical-lessons,.sheekho-traffic 
+  {
+    height: auto;
+  }
+  .theoretical-lessons h2
+  {
+    font-size: 35px !important;
+  }
+  .single-page-navigation ul li {
+    margin: 2px 2px;
+    padding: 2px;
+  }
+
+} /*query close*/
+
+
+
+/*******************************************************
+************MEDIA QUERIES 768px************************
+********************************************************/
+@media screen and (max-width: 768px) 
+{
+  .hide-mobl
+  {
+    display: none;
+  }
+  .single-page-navigation ul li:nth-child(7),.single-page-navigation ul li:nth-child(8),
+  .single-page-navigation ul li:nth-child(9),.single-page-navigation ul li:nth-child(10),
+  .single-page-navigation ul li:nth-child(11),.single-page-navigation ul li:nth-child(12),
+  .single-page-navigation ul li:nth-child(13),.single-page-navigation ul li:nth-child(14),
+  .single-page-navigation ul li:nth-child(15)
+  {
+    display: none;
+  }
+  .top-header .image-2 {
+    margin-top: 160px;
+    margin-right: 0px;
+  }
+  #trainMotion {
+    margin-top: -60px;
+  }
+  .about-us, .contact-us, .faqs ,.student-voice,.driver-education,.theoretical-lessons,.sheekho-traffic,
+  .our-partner
+  {
+    height: auto;
+  }
+  .driver-education .driver-education-content, .about-us .driver-education-content, .careers .driver-education-content, 
+  .sheekho-traffic .driver-education-content, .student-voice .driver-education-content ,
+  .faqs .driver-education-content,.downloads .driver-education-content,.our-partner .driver-education-content {
+      padding: 30px 0px;
+  }
+  .about-us .lower-menu-row, .driver-education .lower-menu-row, .student-voice .lower-menu-row,
+  .careers .lower-menu-row, .press .lower-menu-row,.contact-us .lower-menu-row ,.faqs .lower-menu-row,
+  .our-partner .lower-menu-row {
+    border-top: 1px solid #c1c1c1;
+    padding: 23px 0px 0px 0px;
+  }
+  .driver-education h2, .theoretical-lessons h2, .about-us h2, .careers h2, .sheekho-traffic h2, 
+  .press h2, .contact-us h2, .student-voice h2 ,.faqs h2,.downloads h2,
+  .our-partner h2 {
+    font-size: 35px !important;
+  }
+  .driver-education .lower-menu-row ul li, .theoretical-lessons .lower-menu-row ul li, .about-us 
+  .lower-menu-row ul li, .careers .lower-menu-row ul li, .sheekho-traffic .lower-menu-row ul li, 
+  .press .lower-menu-row ul li, .contact-us .lower-menu-row ul li, .student-voice .lower-menu-row ul li,
+  .faqs .lower-menu-row ul li,.downloads .lower-menu-row ul li,.our-partner .lower-menu-row ul li
+  {
+    margin: 10px 0px;
+    display: block;
+  }
+  .driver-education .seekho-vertical-text, .theoretical-lessons .seekho-vertical-text, .about-us .seekho-vertical-text,
+   .careers .seekho-vertical-text, .theoretical-lessons .seekho-vertical-text, .sheekho-traffic .seekho-vertical-text,
+    .press .seekho-vertical-text, .contact-us .seekho-vertical-text, .student-voice .seekho-vertical-text,
+    .faqs .seekho-vertical-text,.downloads .seekho-vertical-text,.our-partner .seekho-vertical-text
+  {
+    display: none;
+  }
+  .contact-us .seekho-map 
+  {
+    height: 100%;
+    margin-top: 0px;
+  }
+  .contact-us .driver-education-content h2 
+  {
+    margin-top: 24px;
+  }
+  .contact-details
+  {
+    width: 40%;
+    float: left;
+    padding-top: 60px;
+    padding-left: 15px;
+  }
+  .careers h3 {
+    font-size: 30px !important;
+  }
+  .downloads h3 {
+    font-size: 14px !important;
+  }
+  .sheekho-traffic img
+  {
+    width: 100%;
+  }
+  .sheekho-traffic .file-download
+  {
+    margin: 18px 0px;
+  }
+  .theoretical-lessons h4
+  {
+    font-size: 22px;
+  }
+  .lower-menu 
+  {
+    padding-left: 15px;
+    margin-top: 24px
+  }
+  .menu-section .footer-img,.about-us .footer-img,.careers .footer-img,.faqs .footer-img,.press .footer-img,
+  .contact-us .footer-img,.student-voice .footer-img,.sheekho-traffic .footer-img,.theoretical-lessons .footer-img,
+  .driver-education .footer-img,.downloads .footer-img,.our-partner .footer-img
+  {
+  display: block;
+  transform: none;
+  width: 28%;
+  margin-left: 15px;
+}
+  .top-header .lower-menu
+  {
+    padding-left: 15px;
+  }
+  .press .lower-menu li button, .contact-us .lower-menu li button,  .about-us .lower-menu li button, 
+  .careers .lower-menu li button, .sheekho-traffic .lower-menu li button, .student-voice .lower-menu li button,
+  .driver-education button,.theoretical-lessons button,.faqs .lower-menu li button,
+  .downloads .lower-menu li button,.our-partner .lower-menu li button{
+    font-size: 14px;
+  }
+  .hamburger-menu h2 
+  {
+    font-size: 22px;
+  }
+  .menu-section .upper-menu-row {
+    margin: 42px 0px 40px 0px;
+  }
+  .menu_overlay .lower-menu li button 
+  {
+    font-size: 14px;
+  }
+  .upper-menu-col .vertical-img {
+    right: -100px;
+    top: 100px;
+    display: none;
+  }
+  .menu_overlay ul 
+  {
+    padding-left: 0px;
+  }
+  .menu_overlay .lower-menu li {
+    margin: 10px 0px;
+    display: block;
+  }
+  .top-header
+  {
+    height: auto;
+    background-size: 100% auto;
+  } 
+  /* .top-header .image-2 
+  {
+    transform: translate(64px, -62px) !important;
+  } */
+  .top-header .seekho-vertical-text
+  {
+    margin-right: 3px;
+    display: none;
+    
+  }
+  .top-header .overlay-menu .seekho-vertical-text
+  {
+    display: none;
+  }
+  .button_container 
+  {
+    right: -8%;
+  }
+  .menu-section-row {
+    height: 85% !important;
+  }
+  .top-header .seekho-vertical-text p {
+    padding: 71px 34px 110PX 10px !important;
+  }
+    .single-page-navigation 
+  {
+    margin-top: 0px;
+  }
+  .single-page-navigation ul 
+  {
+    margin-left: 44.5px;
+  }
+  .single-page-navigation ul 
+  {
+    padding: 10px 0px 10px 15px !important;
+  }
+  .sheeko .seekho-content img
+  {
+    margin-left: 94px;
+  }
+  .sheeko .seekho-content
+  {
+    padding: 0px 0px;
+  }
+  .sheeko  .seekho-content p:nth-child(1)
+  {
+    padding: 0px 60px 10px 20px;
+    margin-bottom: 10px !important;
+  }
+  .sheeko .seekho-content
+  {
+    margin: 20px 0px !important;
+  }
+  .seekho-content p:nth-child(2)
+  {
+    margin-bottom: 10px !important;
+  }
+  .seekho-content p
+  {
+    margin-left: -18px;
+  }
+  .sheeko .sheeko-read-more 
+  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* .slick-slide 
+  {
+    width: 303px !important;
+  } */
+  .sheeko .seekho-vertical-text 
+  {
+    margin-right: 3px;
+  }
+  .my-slider .item .seekho-vertical-text 
+  {
+    margin-right: 18px;
+  }
+  .our-fleet .seekho-vertical-text 
+  {
+    margin-right: 18px;
+  }
+  .our-fleet ul
+  {
+    padding-left: 30px;
+    margin-bottom: 0px !important;
+  }
+  .our-fleet ul li {
+    font-size: 17px;
+  }
+  .our-fleet .top-section {
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+  }
+  .get-started .item .seekho-vertical-text 
+  {
+    margin-right: 18px;
+  }
+  .get-started .columns 
+  {
+    padding: 70px 16px;
+  }
+  .column-detail {
+    margin-left: -34px;
+  }
+  .column-detail ul 
+  {
+    padding: 30px 0px 30px 18px !important;
+  }
+  .packages .item .seekho-vertical-text 
+  {
+    margin-right: 18px;
+  }
+  .packages .tab 
+  {
+    margin-top: 48px;
+  }
+  .our-fleet-img-text p 
+  {
+    bottom: 0px;
+    left: 46px;
+  }
+  .our-team .item .seekho-vertical-text 
+  {
+    margin-right: 18px;
+  }
+  .our-team-content 
+  {
+    margin-left: -33px;
+  }
+  .our-team-text 
+  {
+    padding: 20px;
+  }
+  .our-team-text p
+  {
+    font-size: 14px;
+  }
+  .footer img 
+  {
+    width: 50%;
+  }
+  .top-header .lower-menu-row 
+  {
+    bottom: auto !important;
+    position: unset !important;
+  } 
+  .menu_overlay.open
+  {
+    overflow-y: scroll;
+  }
+  .sheeko .sheeko-read-more
+  {
+    padding-left: 0px;
+  }
+  .our-team .slick-prev
+  {
+    left: -8% !important;
+  }
+  .our-team .slick-next {
+    right: -8% !important;
+  }
+  .our-team-content img {
+    width: 100%;
+  }
+  .our-team .slick-slide img {
+    display: inline-block;
+  }
+  .flip-box-front, .flip-box-back {
+    padding: 30px 18px 0px 18px;
+  }
+  .flip-box-front p {
+    margin-top: 0px;
+  }
+  .flip-box-back p {
+    margin-top: 15px;
+  }
+}
+
+
+
+/*******************************************************
+************MEDIA QUERIES 426px************************
+********************************************************/
+
+
+@media screen and (max-width: 426px) 
+{
+  .menu_overlay.open
+  {
+    overflow-y: scroll;
+  }
+
+  .student-voice .div-scroll, .faqs .div-scroll 
+  {
+    height: auto;
+    overflow-y: auto;
+  }
+  .button_container {
+    right: 0%;
+  }
+  .top-header {
+    background-image: none !important;
+    height: auto !important;
+  }
+  .top-header .mob-img
+  {
+    display: block;
+    margin-top: -115px;
+    width: 100%;
+    height: auto;
+  }
+  .top-header .seekho-vertical-text 
+  {
+    height: 50%;
+  }
+  .hide-mobl
+  {
+    display: none;
+  }
+  
+  .about-us, .press, .contact-us,.driver-education,.sheekho-traffic,.theoretical-lessons,.faqs,.our-partner {
+    height: auto;
+  }
+  .top-header .lower-menu-row {
+    border-top: 1px solid #c1c1c1;
+    padding: 15px 0px;
+    margin-left: 0px !important;
+  }
+  .button_container {
+    width: 10%;
+  }
+  .button_container.active {
+    width: 10%;
+  }
+  .button_container span {
+    width: 40%;
+    right: 30%;
+  }
+  .button_container.active span
+  {
+    width: 45%;
+    right: 26%;
+  }
+  .driver-education, .theoretical-lessons, .student-voice, .sheekho-traffic 
+  {
+    height: auto;
+  }
+  .driver-education .hide-btn, .theoretical-lessons .hide-btn, .about-us .hide-btn, .careers .hide-btn, .sheekho-traffic .hide-btn,
+   .press .hide-btn, .contact-us .hide-btn, .student-voice .hide-btn,.downloads .hide-btn {
+    padding: 24px 10px 6px 10px;
+    font-size: 38px;
+  }
+  .driver-education .seekho-vertical-text, .theoretical-lessons .seekho-vertical-text, 
+  .about-us .seekho-vertical-text, .theoretical-lessons .seekho-vertical-text,
+   .sheekho-traffic .seekho-vertical-text, .press .seekho-vertical-text, .contact-us .seekho-vertical-text 
+  {
+    height: 125%;
+  }
+  .press .seekho-vertical-text {
+    height: 330%;
+  }
+  .driver-education .driver-education-content, .about-us .driver-education-content,
+   .careers .driver-education-content, .sheekho-traffic .driver-education-content,
+    .student-voice .driver-education-content,.faqs .driver-education-content,
+    .downloads .driver-education-content,.our-partner .driver-education-content {
+    margin: 30px 0px 0px 0px;
+  }
+  .about-us .lower-menu-row, .driver-education .lower-menu-row, .student-voice .lower-menu-row,
+   .careers .lower-menu-row, .press .lower-menu-row, .contact-us .lower-menu-row,
+   .faqs .lower-menu-row,.downloads .lower-menu-row,.our-partner .lower-menu-row {
+    padding: 15px 0px 15px 0px;
+  }
+  .press .press-img1, .press .press-img2, .press .press-img3, .press .press-img4, .press .press-img5,
+   .press .press-img6, .press .press-img7, .press .press-img8, .press .press-img9 {
+    margin: 10px 0px;
+  }
+  .driver-education .hide-btn, .theoretical-lessons .hide-btn, .about-us .hide-btn, .careers .hide-btn,
+   .sheekho-traffic .hide-btn, .press .hide-btn, .contact-us .hide-btn, .student-voice .hide-btn,
+   .faqs .hide-btn,.downloads .hide-btn,.our-partner .hide-btn
+  {
+    right: 10px;
+  }
+  .modal-content
+  {
+    width: 100%;
+  }
+  .contact-us .contact-details
+  {
+    width: 100%;
+    float: none;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .contact-us .seekho-map iframe
+  {
+    height: 250px !important;
+  }
+  .contact-us .seekho-map
+  {
+    width: 100%;
+    position: inherit;
+    height: auto;
+    padding: 0px 15px;
+  }
+  .lower-menu {
+    margin-bottom: 0px !important;
+    margin-top: 24px;
+  }
+  .hamburger-menu h2 
+  {
+    font-size: 28px;
+  }
+  .top-header .seekho-vertical-text p 
+  {
+    padding: 0px 10px 85PX 10px !important;
+  
+  }
+  .seekho-vertical-text p 
+  {
+    font-size: 12px;
+  }
+  #trainMotion 
+  {
+    margin-top: 68px !important;
+  }
+  #trainMotion.choochoo img 
+  {
+    transform: translate(58%, 0%) !important;
+  }
+  .top-header .image-2 
+  {
+    transform: translate(-19px, 102px) !important;
+    display: none;
+  }
+  .upper-menu-col img {
+    right: -56px;
+    top: 100px;
+  }
+  .upper-menu-col .vertical-img {
+    width: 50%;
+    display: none;
+}
+  #trainMotion img {
+    transform: translate(-12%, 0%);
+    transition: all 2s ease-out;
+    display: none;
+  }
+  .single-page-navigation ul 
+  {
+    margin-left: 0px;
+    padding: 20px 0px 20px 15px !important;
+  }
+  .single-page-navigation {
+    background-color: black;
+    opacity: 100%;
+  }
+  .single-page-navigation ul li 
+  {
+    margin: 0px 2px;
+    font-size: 14px;
+    border: none;
+    padding: 0px;
+  }
+  .single-page-navigation .active {
+    font-size: 14px;
+    padding: 4px;
+    font-weight: bold;
+  }
+  .single-page-navigation ul li:nth-child(1),.single-page-navigation ul li:nth-child(6),
+  .single-page-navigation ul li:nth-child(7),.single-page-navigation ul li:nth-child(8),
+  .single-page-navigation ul li:nth-child(9),.single-page-navigation ul li:nth-child(10),
+  .single-page-navigation ul li:nth-child(11),.single-page-navigation ul li:nth-child(12),
+  .single-page-navigation ul li:nth-child(13),.single-page-navigation ul li:nth-child(14),
+  .single-page-navigation ul li:nth-child(15)
+  {
+    display: none;
+  }
+  .single-page-navigation ul li a 
+  {
+    font-size: 12px;
+  }
+  .single-page-navigation .lower-menu
+  {
+    display: none;
+  }
+  .sheeko .seekho-content img 
+  {
+    margin-left: -17px;
+  }
+  .sheeko .seekho-content p {
+    padding: 0px 15px 10px 20px;
+  }
+  .seekho-content p:nth-child(1) 
+  {
+    font-size: 21px;
+    line-height: 1.4em;
+  }
+  .seekho-content p:nth-child(2),.seekho-content p:nth-child(3)
+  {
+    font-size: 16px;
+    margin-bottom: 12px !important;
+  }
+  .seekho-content p {
+    margin-left: -18px;
+  }
+  .sheeko .sheeko-read-more button
+  {
+    padding-left: 0px;
+  }
+  p.about-ceo-name
+  {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  /* .slick-slide {
+    width: 325px !important;
+  } */
+  .slick-slide
+  {
+    border-right: none !important;
+  }
+  .get-started .columns {
+    padding: 46px 16px 0px 16px !important;
+    height: auto;
+  }
+  .get-started .columns:nth-child(1) {
+    margin-left: auto !important;
+}
+  .get-started .columns p 
+  {
+    font-size: 15px !important;
+  }
+  .column-detail {
+    margin-left: -27px;
+  }
+  .our-fleet .top-section {
+    background-image: none;
+    background-color: #707070;
+  }
+  .our-fleet-img-text p 
+  {
+    bottom: -5px;
+    left: 26px;
+    font-size: 12px;
+  }
+  .our-fleet ul
+  {
+    padding-left: 12px !important;
+  }
+  .our-fleet ul li 
+  {
+    font-size: 14px;
+  }
+  .column-detail ul 
+  {
+    font-size: 14px;
+    padding: 30px 0px 30px 28px !important;
+  }
+  .package-col-mob
+  {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .tabcontent table tr, table tr th, table tr td {
+    padding: 8px;
+    font-size: 13px;
+    line-height: 1.3em;
+  }
+  .our-team-content 
+  {
+    background-image: none !important;
+    background-color: #2983EF;
+    margin-top: 0px;
+    margin-left: -41px;
+    padding:25px 10px;
+    height:auto;
+  }
+  .our-team-content .slick-slide 
+  {
+    padding: 0px 6px 0px !important;
+    }
+    .our-team-content img
+    {
+        filter:none;
+    }
+    .our-team-content .slick-slide p {
+    display: block !important;
+    color: #343a40 !important;
+    transform: translateY(-35px);
+    padding-left: 10px;
+    background-color: #ecf0f1;
+    font-size: 12px;
+    }
+  .package-parg-borrom
+  {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .footer .text-sm-center
+  {
+    text-align: center !important;
+    font-size: 14px;
+    margin-top: 25px;
+  }
+  .text-mob-center
+  {
+    text-align: right;
+    margin: 10px 0px;
+    padding: 0px;
+  }
+  .text-mob-center p:nth-child(2)
+  {
+    font-size: 14px;
+  }
+  .second-footer .lower-menu li
+  {
+    display: block;
+  }
+  .downloads
+  {
+      height:auto !important;
+  }
+  .slick-next {
+    right: 0% !important;
+  }
+  .downloads h3 {
+    font-size: 14px !important;
+  }
+  .careers h3
+  {
+    font-size: 18px !important;
+    margin: 4px 0px;
+  }
+
+  .flip-box-front, .flip-box-back
+  {
+    padding: 20px;
+  }
+  .flip-box
+  {
+    height: 130px;
+  }
+  /*career model box*/
+  /* .mySlides {
+    width: 92%;
+  } */
+  .visible-download
+  {
+    display: none;
+  }
+  .mySlides {
+    width: 80%;
+  }
+  .mySlidess {
+    width: 95%;
+  }
+  .prev
+  {
+    top: 28%;
+    left: 0%;
+  }
+  .next 
+  {
+    top: 28%;
+    right: 2%;
+  }
+  .sheeko .sheeko-read-more 
+  {
+     margin-top: 0px;
+  }
+  .seekho-content p:nth-child(2) 
+  {
+    margin-bottom: 0px !important;
+  }
+  .sheeko .sheeko-read-more 
+  {
+    margin-top: 0px;
+  }
+  .our-team .slick-prev
+  {
+    left: -0% !important;
+  }
+  .our-team .slick-next {
+    right: -0% !important;
+  }
+  .our-team-content img {
+    width: 70%;
+  }
+  .our-team-content .slick-slide {
+    text-align: center;
+  }
+  .flip-box-front, .flip-box-back {
+    display: flex;
+    align-items: center;
+  }
+} 
+/***************MEDIA QUERIES 415px************************/
+@media screen and (max-width: 415px) 
+{
+  .top-header .lower-menu-row {
+    bottom: 92px;
+  }
+}
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) 
+{ 
+  .top-header .lower-menu-row 
+  {
+    bottom: 166px !important;
+  }
+}
+  @media screen and (min-device-width: 414px) and (max-device-width: 736px) 
+{ 
+  .top-header .lower-menu-row 
+  {
+    bottom: 92px !important;
+  }
+}
+
+
+/*******************************************************
+************MEDIA QUERIES 376px************************
+********************************************************/
+
+
+@media screen and (max-width: 376px) 
+{
+  .top-header .seekho-vertical-text {
+    height: 38%;
+  }
+  .top-header {
+    background-image: none !important;
+    height: auto !important;
+  }
+  .top-header .mob-img
+  {
+    margin-top: -115px;
+    width: 100%;
+    height: auto;
+  }
+  .top-header .seekho-vertical-text p 
+  {
+    padding: 23px 10px 14PX 10px !important;
+  }
+  .top-header .image-2 
+  {
+    transform: translate(-19px, 78px) !important;
+  }
+  .top-header .lower-menu-row 
+  {
+    bottom: 0px;
+  }
+  .menu-section .upper-menu-row {
+    margin: 65px 0px 0px 0px;
+  }
+  .hamburger-menu h2 {
+    font-size: 25px;
+  }
+  .menu_overlay .lower-menu li button {
+    font-size: 14px;
+    padding: 3px;
+  }
+  .site-logo-img
+  {
+    width: 100%;
+  }
+  #trainMotion 
+  {
+    margin-top: 48px !important;
+  }
+  .single-page-navigation ul 
+  {
+    margin-left: 0px;
+    padding: 25px 0px 25px 10px !important;
+  }
+  .single-page-navigation ul li a 
+  {
+    font-size: 12px;
+  }
+  .seekho-content p {
+    margin-left: -18px;
+  }
+  .column-detail ul 
+  {
+    font-size: 9px;
+  }
+  .column-detail {
+    margin-left: -18px;
+  }
+  .get-started .columns 
+  {
+    height: 280px;
+  }
+  .get-started .columns 
+  {
+    padding: 45px 16px 0px 16px;
+  }
+  .top-header .seekho-vertical-text p 
+  {
+    padding: 26px 10px 14PX 15px !important;
+    font-size: 12px;
+  }
+  .single-page-navigation ul 
+  {
+    margin-left: 0px;
+  }
+  .single-page-navigation ul li 
+  {
+    margin: 0px 2px;
+  }
+  .top-header .image-2 
+  {
+    transform: translate(6px, 70px) !important;
+  }
+  #trainMotion img 
+  {
+    transform: translate(0%, 0%) !important;
+  }
+  #trainMotion.choochoo img 
+  {
+    transform: translate(82%, 0%) !important;
+  }
+  .column-detail ul 
+  {
+    font-size: 9px;
+  }
+  /* .slick-slide {
+    width: 283px !important;
+  } */
+  .our-fleet ul li {
+    font-size: 12px;
+    background-size: 5%;
+  }
+  .our-fleet .content {
+    margin-top: 0px;
+  }
+  .our-fleet h2 {
+    color: white;
+    margin-top: 10px;
+  }
+  .text-mob-center p:nth-child(2)
+  {
+    font-size: 13px;
+  }
+  .flip-box
+  {
+    height: 170px;
+  }
+  .footer .third-footer, .footer .footer-social {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*******************************************************
+************MEDIA QUERIES 320px************************
+********************************************************/
+
+
+@media screen and (max-width: 320px)
+{
+  .hamburger-menu h2 {
+    font-size: 20px;
+  }
+  .upper-menu-col img {
+    right: -46px;
+    top: 100px;
+  }
+  .seekho-content p {
+    margin-left: -8px;
+  }
+  .packages .tab button {
+    padding: 2px 15px;
+  }
+  .site-logo-img
+  {
+    width: 170%;
+  }
+  .careers,.downloads
+  {
+    height: auto;
+  }
+  .top-header {
+    background-image: none !important;
+    height: auto !important;
+  }
+  .top-header .mob-img
+  {
+    margin-top: -115px;
+    width: 100%;
+    height: auto;
+  }
+  .top-header .seekho-vertical-text {
+    height: 30%;
+  }
+  .single-page-navigation ul 
+  {
+      margin-left: 0px;
+      padding: 25px 0px 25px 5px !important;
+  }
+  .single-page-navigation ul li a {
+    font-size: 10px;
+}
+  /* .slick-slide {
+    width: 237px !important;
+  } */
+  .our-team-content
+  {
+    height: auto;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding:5px;
+  }
+  .get-started .column-detail
+  {
+    margin-left: -9px !important;
+  }
+  .our-fleet ul li {
+    font-size: 10px;
+  }
+  .column-detail ul {
+    padding: 10px 15px !important;
+  }
+  .text-mob-center p:nth-child(2)
+  {
+    font-size: 11px;
+  }
+  .flip-box {
+    height: 235px;
+  }
+}
+
+
+
+
